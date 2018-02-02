@@ -1,0 +1,53 @@
+/* General */
+.box > * {
+  border: 2px solid blue;
+  padding: 5px;
+  /* margin: 5px; */
+  /* margin-bottom: 25px; */
+}
+
+.box {
+  display: flex;
+
+  border: 2px dotted blue;
+  background: lightblue;
+  padding: 10px;
+}
+
+/* Example 1 */
+.box1 > * {
+  float: left;
+}
+
+.box1 {
+}
+
+/* Example 2 */
+.box2 {
+  flex-wrap: wrap;
+}
+
+.box2 > * {
+  flex: 1 1 200px;
+}
+
+/* Example 3 */
+.gbox {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+
+  border: 2px dotted salmon;
+  background: lightsalmon;
+  padding: 10px;
+}
+
+.gbox > * {
+  border: 2px solid salmon;
+  padding: 5px;
+}
+
+/* Example 3 */
+.nested {
+  background-color: orange;
+  display: contents;
+}
